@@ -15,13 +15,17 @@ struct LineChartView: View {
     var body: some View {
         VStack{
             Chart{
-                ForEach(hkWeatherData){ item in
-                    LineMark(
-                    x: .value("Month", item.date),
-                        
-                    y: .value("Temperature", item.temperature)
-                    )
+                ForEach(chartData, id: \.city){series in
+                    ForEach(series.data){ item in
+                        LineMark(
+                        x: .value("Month", item.date),
+                            
+                        y: .value("Temperature", item.temperature)
+                        )
+                        .foregroundStyle(by: .value("city", series.city))
+                    }
                 }
+                
             }
             .frame(height: 300)
             .chartXAxis{
