@@ -17,6 +17,9 @@ struct ContentView: View {
             ForEach(weekdays.indices, id: \.self){ index in
                 BarMark(x: .value("day", weekdays[index]), y: .value("Steps", steps[index]))
                     .foregroundStyle(by: .value("day", weekdays[index]))
+                    .annotation{
+                        Text("\(steps[index])")
+                    }
             }
         }
        
