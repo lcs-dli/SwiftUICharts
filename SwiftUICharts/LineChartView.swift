@@ -30,6 +30,13 @@ struct LineChartView: View {
                     AxisValueLabel(format: .dateTime.month(.defaultDigits))
                 }
             }
+            .chartYAxis{
+                AxisMarks(position: .leading)
+            }
+            .chartPlotStyle(){plotArea in
+                plotArea
+                    .background(.blue.opacity(0.1))
+            }
         }
     }
 }
