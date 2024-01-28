@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct WeatherData: Identifiable {
     let id = UUID()
     let date: Date

@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import Charts
 
 struct LineChartView: View {
+    
+    let chartData = [(city: "HongKong", data: hkWeatherData), (city: "London", data: londonWeatherData), (city: "Taipei", data: taipeiWeatherData)]
+    
     var body: some View {
-        
+        Text("")
     }
 }
 
