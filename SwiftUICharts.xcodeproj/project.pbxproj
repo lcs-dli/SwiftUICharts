@@ -15,6 +15,8 @@
 		49FD09E32B658FAF008DAE26 /* SwiftUIChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD09E22B658FAF008DAE26 /* SwiftUIChartsTests.swift */; };
 		49FD09ED2B658FAF008DAE26 /* SwiftUIChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD09EC2B658FAF008DAE26 /* SwiftUIChartsUITests.swift */; };
 		49FD09EF2B658FAF008DAE26 /* SwiftUIChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD09EE2B658FAF008DAE26 /* SwiftUIChartsUITestsLaunchTests.swift */; };
+		49FD09FC2B66D858008DAE26 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD09FB2B66D858008DAE26 /* LineChartView.swift */; };
+		49FD09FE2B66D86E008DAE26 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD09FD2B66D86E008DAE26 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		49FD09E82B658FAF008DAE26 /* SwiftUIChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD09EC2B658FAF008DAE26 /* SwiftUIChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITests.swift; sourceTree = "<group>"; };
 		49FD09EE2B658FAF008DAE26 /* SwiftUIChartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49FD09FB2B66D858008DAE26 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		49FD09FD2B66D86E008DAE26 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				49FD09CE2B658FAD008DAE26 /* SwiftUIChartsApp.swift */,
 				49FD09D02B658FAD008DAE26 /* ContentView.swift */,
+				49FD09FB2B66D858008DAE26 /* LineChartView.swift */,
 				49FD09D22B658FAD008DAE26 /* Item.swift */,
 				49FD09D42B658FAE008DAE26 /* Assets.xcassets */,
 				49FD09D62B658FAE008DAE26 /* SwiftUICharts.entitlements */,
 				49FD09D72B658FAE008DAE26 /* Preview Content */,
+				49FD09FD2B66D86E008DAE26 /* WeatherData.swift */,
 			);
 			path = SwiftUICharts;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49FD09D12B658FAD008DAE26 /* ContentView.swift in Sources */,
+				49FD09FE2B66D86E008DAE26 /* WeatherData.swift in Sources */,
 				49FD09D32B658FAD008DAE26 /* Item.swift in Sources */,
 				49FD09CF2B658FAD008DAE26 /* SwiftUIChartsApp.swift in Sources */,
+				49FD09FC2B66D858008DAE26 /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
