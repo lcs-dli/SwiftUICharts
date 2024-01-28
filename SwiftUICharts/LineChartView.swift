@@ -13,7 +13,24 @@ struct LineChartView: View {
     let chartData = [(city: "HongKong", data: hkWeatherData), (city: "London", data: londonWeatherData), (city: "Taipei", data: taipeiWeatherData)]
     
     var body: some View {
-        Text("")
+        VStack{
+            Chart{
+                ForEach(hkWeatherData){ item in
+                    LineMark(
+                    x: .value("Month", item.date),
+                        
+                    y: .value("Temperature", item.temperature)
+                    )
+                }
+            }
+            .frame(height: 300)
+            .chartXAxis{
+                AxisMarks(values: .stride(by: .month)){ value in
+                    AxisGridLine()
+                    AxisValueLabel(format: .dateTime.month(.defaultDigits))
+                }
+            }
+        }
     }
 }
 
